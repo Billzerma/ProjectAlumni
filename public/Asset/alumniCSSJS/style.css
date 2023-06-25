@@ -29,6 +29,10 @@
   margin-right: 10px;
 }*/
 
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(236, 218, 218);
@@ -75,6 +79,11 @@ img {
 .navbar-brand,
 .navbar-nav .nav-link {
   color: white;
+  margin: 10px;
+}
+
+.navbar{
+  background-color: #44629e;
 }
 
 .navbar-nav .nav-link {
@@ -193,6 +202,9 @@ span {
 .marsoseContainer {
   display: flex;
   justify-content: center;
+  
+   
+  
 }
 
 .marsoseCard {
@@ -242,5 +254,175 @@ section.home-banner {
 }
 
 .foot{
-  margin-top: 700px;
+  margin-top: 100px;
+  
+}
+
+.bg-footer{
+  background-color: #44629e;
+}
+
+/* caraosel */
+.c-item{
+  height: 620px;
+ 
+ 
+  
+}
+.c-im{
+  height: 620px;
+  object-fit: cover;
+  filter: brightness(0.6);
+ 
+}
+
+
+/* end caraosel */
+
+/* berita */
+
+.row{
+  justify-content: center;
+  
+  background-color: #efefef;
+  margin: 20px 50px 0 50px;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+
+}
+
+.subtitle-home{
+  padding:30px 10px 20px 40px ;
+  margin: 0 50px 20px 50px;
+  
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+
+}
+
+
+/* berita */
+
+/* galeri */
+
+.container-kegiatan{
+  
+  margin: 20px 90px 0 90px;
+ 
+}
+.simple-expl{
+  
+  margin: 20px 90px 0 90px;
+ 
+}
+.r-kegiatan{
+  border-radius: 0;
+
+}
+.r-info{
+  margin: 0 50px 20px 50px;
+  border-radius: 20px 20px 0 0;
+}
+.r-info-login{
+  margin: 0 50px 20px 50px;
+  border-radius: 0 0 20px 20px;
+}
+
+.gal1{
+ 
+  width: 600px;
+  height: 400px;
+  padding: 0;
+  
+}
+.end-home{
+  margin: 0 90px 20px 90px;
+}
+.gal2{
+ 
+  height: 300px;
+  margin-top: 10px;
+ 
+}
+.gal3{
+  margin-top: 10px;
+}
+
+
+.item-gal{
+  height: 400px;
+  width: 600px;
+}
+
+.colm-photo1{
+    
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  object-fit: cover;
+ 
+}
+
+
+.slidergal1{
+  margin-top: 20px;
+}
+
+
+.nopad{
+  padding: 0;
+}
+
+.text-galeri{
+  margin: 0 0 20px 0;
+
+}
+
+.link-berita{
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+
+}
+
+.home-berita{
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+}
+
+.namaweb{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.info-web p{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 15px;
+  
+}
+.info-web a{
+  text-decoration: none;
+}
+.img-info-web{
+  padding: 15px;
+  border-radius: 15px;
+}
+.more{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: right;
+  margin: o;
+  padding: 0;
+}
+.img-info-web img{
+  border-radius: 15px;
+
 }

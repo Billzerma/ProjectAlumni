@@ -25,9 +25,9 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Alumni<span>KU</span></a>
+            <h2 class="navbar-brand namaweb" href="#">Alumni<span>KU</span></h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
