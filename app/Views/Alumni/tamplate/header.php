@@ -14,6 +14,12 @@
         rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="<?= base_url('Asset\alumniCSSJS\style.css');?>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
     <title>Alumni</title>
 </head>
 
@@ -32,13 +38,13 @@
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">berita</a>
+                        <a class="nav-link active" href="#about">berita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('carialumni') ?>">cari alumni</a>
+                        <a class="nav-link active" href="<?= base_url('carialumni') ?>">cari alumni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Log Out</a>
+                        <a class="nav-link active"  href="#contact">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -54,9 +60,9 @@
 
     <!-- Footer -->
     <!-- Remove the container if you want to extend the Footer to full width. -->
-    <div class=" my-5">
+    <div class=" my-5 ">
         <!-- Footer -->
-        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+        <footer class="text-center text-lg-start text-dark foot" style="background-color: #ECEFF1">
             <!-- Section: Social media -->
 
             <!-- Section: Social media -->
@@ -114,7 +120,7 @@
             <!-- Section: Links  -->
 
             <!-- Copyright -->
-            <div <div id="copyright" class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"></div>
+            <div  id="copyright" class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"></div>
 
             <!-- Copyright -->
         </footer>
@@ -128,6 +134,15 @@
     </script>
     <script src="https://kit.fontawesome.com/ceefbd64d0.js" crossorigin="anonymous"></script>
     <script src="Asset\alumniCSSJS\scrip.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
+    </script>
+
     <script>
     const X = () => {
         const menu = document.querySelector('.bar');
