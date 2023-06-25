@@ -178,8 +178,6 @@
                     </div>
                 </div>
                 </div>
-               
-
             </div>
 
 
@@ -210,7 +208,7 @@
                             <p  class="more"><a href="">Lihat Lebih Banyak</a></p>
                         </div>
                         <div class="info-web">
-                            <p>Segera <a href="">Daftarkan</a> Akun mu untuk fitur yang lebih menarik</p>
+                            <p>Segera <a href="">Daftarkan</a> Akun mu untuk fitur yang lebih menarik okeey</p>
                         </div>
                     </div>
                 </div>
