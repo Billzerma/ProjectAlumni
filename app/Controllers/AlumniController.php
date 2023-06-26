@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Controllers;
+
+use App\Models\AnggotaModel;
 use App\Models\DataAlumni;
 
 class AlumniController extends BaseController
@@ -33,6 +35,155 @@ class AlumniController extends BaseController
      
           return view('Alumni/register');
     }
- 
-    
+
+    protected $anggotaModel;
+    public function __construct()
+    {
+      $this->anggotaModel = new AnggotaModel();
+    }
+    public function anggota()
+    {
+      // $anggota = $this->anggotaModel->findAll();
+      $data = [
+            'title' => 'Daftar',
+            'anggota'=> $this->anggotaModel->getAnggota()
+      ];
+      // $anggotaModel = new \App\Models\AnggotaModel();
+      return view('anggota/index', $data);
+    }
+
+    public function detail($slug)
+    {
+      $data = [
+            'title' => 'Detail Komik',
+            'anggota' => $this->anggotaModel->getAnggota($slug)
+      ];
+
+      // Jika anggota tidak ada di tabel
+      if(empty($data['anggota'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Nama Anggota ' . $slug . 'tidak ditemukan.');
+      }
+
+      return view('anggota/detail', $data);
+    }
+
+    public function create()
+    {
+      // session();
+      $data = [
+            'title' => 'Form Tambah Data Anggota',
+            'validation' => \Config\Services::validation()
+      ];
+      return view('anggota/create', $data); 
+    }
+
+    public function save()
+    {
+      // validasi input
+      if(!$this->validate([
+            'nama'=>'required|is_unique[anggota.nama]',
+            'no_anggota'=>'required',
+            'hp'=>'required',
+            'sampul'=> [
+                  'rules' => 'max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,imag/jpg,image/jpeg,image/png]',
+                  'errors' => [
+                        'max_size' => 'Gambarnya terlalu besar bosque',
+                        'is_image' => 'filenya harus gambar ya cakep',
+                        'mime_in' => 'lo ga pilih gambar bre...'
+                  ]
+            ]
+      ])) {
+            $validation = \Config\Services::validation();
+            session()->setFlashdata('err',$validation->listErrors());
+            return redirect()->to('anggota/create')->withInput();
+      }
+
+      // ambil gambar
+      $fileSampul = $this->request->getFile('sampul');
+      // apakah tidak ada gambar yang diupload
+      if($fileSampul->getError() == 4) {
+            $namaSampul = 'default.png';
+      } else {
+            // pindahkan file ke folder gambar di ci
+            $fileSampul->move('Asset/alumniCSSJS/gambar/Anggota');
+            // ambil nama file
+      $namaSampul = $fileSampul->getName();
+      }
+     
+
+      
+      $slug = url_title($this->request->getVar('nama'), '-', true);
+      $this->anggotaModel->save([
+            'nama' => $this->request->getVar('nama'),
+            'slug' => $slug,
+            'no_anggota' => $this->request->getVar('no_anggota'),
+            'hp' => $this->request->getVar('hp'),
+            'sampul' => $namaSampul
+      ]);
+
+      session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan.');
+
+      return redirect()->to('/anggota');
+    }
+
+    public function delete($id)
+    {
+        $anggota = $this->anggotaModel->find($id);
+        
+        if ($anggota) {
+            $this->anggotaModel->delete($id);
+            session()->setFlashdata('pesan', 'Data berhasil dihapus.');
+        } else {
+            session()->setFlashdata('pesan', 'Data tidak ditemukan.');
+        }
+
+        return redirect()->to('/anggota');
+    }
+
+    public function edit($slug)
+    {
+      $data = [
+            'title' => 'Form Ubah Data Anggota',
+            'validation' => \Config\Services::validation(),
+            'anggota' => $this->anggotaModel->getAnggota($slug)
+      ];
+      return view('anggota/edit', $data); 
+    }
+
+    public function update($id)
+    {
+      // cek nama
+      $namaLama = $this->anggotaModel->getAnggota($this->request->getVar('slug'));
+      if($namaLama['nama'] == $this->request->getVar('nama')) {
+            $rule_nama = 'required';
+      } else {
+            $rule_nama = 'required|is_unique[anggota.nama]'; 
+      }
+      if(!$this->validate([
+            'nama'=> $rule_nama,
+            'no_anggota'=>'required',
+            'hp'=>'required',
+            'sampul'=>'required',
+      ])) {
+            $validation = \Config\Services::validation();
+            session()->setFlashdata('err',$validation->listErrors());
+            return redirect()->to('anggota/edit/' . $this->request->getVar('slug'))->withInput();
+      }
+
+
+      $slug = url_title($this->request->getVar('nama'), '-', true);
+      $this->anggotaModel->save([
+            'id' => $id,
+            'nama' => $this->request->getVar('nama'),
+            'slug' => $slug,
+            'no_anggota' => $this->request->getVar('no_anggota'),
+            'hp' => $this->request->getVar('hp'),
+            'sampul' => $this->request->getVar('sampul')
+      ]);
+
+      session()->setFlashdata('pesan', 'Data Berhasil Diubah.');
+
+      return redirect()->to('/anggota');
+    }
+
 }
