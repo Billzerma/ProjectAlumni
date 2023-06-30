@@ -41,25 +41,23 @@ class AlumniController extends BaseController
          return view('Alumni/tamplate/header');
         
     }
-    public function profil()
-    {
-         return view('Alumni/profil');
-        
-    }
-    public function berita()
-    {
-         return view('Alumni/berita');
-        
-    }
-
     public function cariAlumni()
     {
-//      $cari = new DataAlumni;
-//      $data['cari'] = $cari->orderBy('nama', 'asc')->findAll();
-//      echo view('Alumni/cari', $data);
+     $cari = new DataAlumni;
+     $data['cari'] = $cari->orderBy('nama', 'asc')->findAll();
+     echo view('Alumni/cari', $data);
         
     }
-  
+    public function login()
+    {
+     
+          return view('Alumni/login');
+    }
+    public function register()
+    {
+     
+          return view('Alumni/register');
+    }
 
     protected $anggotaModel;
     public function __construct()
@@ -156,17 +154,27 @@ class AlumniController extends BaseController
 
     public function delete($id)
     {
+        // Cari gambar berdasarkan id
         $anggota = $this->anggotaModel->find($id);
-        
-        if ($anggota) {
-            $this->anggotaModel->delete($id);
-            session()->setFlashdata('pesan', 'Data berhasil dihapus.');
-        } else {
-            session()->setFlashdata('pesan', 'Data tidak ditemukan.');
-        }
 
+      //   cek jika file gambarnya default
+      if($anggota['sampul'] != 'default.png') {
+            $pathToImage = 'Asset/alumniCSSJS/gambar/Anggota/' . $anggota['sampul'];
+            if (file_exists($pathToImage)) {
+                unlink($pathToImage);
+            }
+      }
+    
+        // Hapus gambar
+    
+    
+        // Hapus data anggota berdasarkan id
+        $this->anggotaModel->where('id', $id)->delete();
+    
+        session()->setFlashdata('pesan', 'Data berhasil dihapus');
         return redirect()->to('/anggota');
     }
+    
 
     public function edit($slug)
     {
@@ -181,8 +189,8 @@ class AlumniController extends BaseController
     public function update($id)
     {
       // cek nama
-      $namaLama = $this->anggotaModel->getAnggota($this->request->getVar('slug'));
-      if($namaLama['nama'] == $this->request->getVar('nama')) {
+      $anggotaLama = $this->anggotaModel->getAnggota($this->request->getVar('slug'));
+      if($anggotaLama['nama'] == $this->request->getVar('nama')) {
             $rule_nama = 'required';
       } else {
             $rule_nama = 'required|is_unique[anggota.nama]'; 
@@ -191,12 +199,36 @@ class AlumniController extends BaseController
             'nama'=> $rule_nama,
             'no_anggota'=>'required',
             'hp'=>'required',
-            'sampul'=>'required',
+            'sampul'=> [
+                  'rules' => 'max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,imag/jpg,image/jpeg,image/png]',
+                  'errors' => [
+                        'max_size' => 'Gambarnya terlalu besar bosque',
+                        'is_image' => 'filenya harus gambar ya cakep',
+                        'mime_in' => 'lo ga pilih gambar bre...'
+                  ]
+            ]
       ])) {
             $validation = \Config\Services::validation();
             session()->setFlashdata('err',$validation->listErrors());
             return redirect()->to('anggota/edit/' . $this->request->getVar('slug'))->withInput();
       }
+
+      $fileSampul = $this->request->getFile('sampul');
+
+      // cek gambar apakah tetap gambar lama
+      if ($fileSampul->getError() == UPLOAD_ERR_NO_FILE) {
+          $namaSampul = $this->request->getVar('sampulLama');
+      } else {
+          // generate nama
+          $namaSampul = $fileSampul->getName();
+          // pindahkan gambar
+          $fileSampul->move(ROOTPATH . 'public/Asset/alumniCSSJS/gambar/Anggota/', $namaSampul);
+          // hapus file lama
+          if (!empty($this->request->getVar('sampulLama'))) {
+              unlink(ROOTPATH . 'public/Asset/alumniCSSJS/gambar/Anggota/' . $this->request->getVar('sampulLama'));
+          }
+      }
+      
 
 
       $slug = url_title($this->request->getVar('nama'), '-', true);
@@ -206,7 +238,7 @@ class AlumniController extends BaseController
             'slug' => $slug,
             'no_anggota' => $this->request->getVar('no_anggota'),
             'hp' => $this->request->getVar('hp'),
-            'sampul' => $this->request->getVar('sampul')
+            'sampul' => $namaSampul
       ]);
 
       session()->setFlashdata('pesan', 'Data Berhasil Diubah.');
