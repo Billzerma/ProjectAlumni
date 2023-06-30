@@ -48,15 +48,13 @@ $routes->get('/profil', 'AlumniController::profil');
 $routes->get('/berita', 'AlumniController::berita');
 
 
-<<<<<<< HEAD
-// $routes->get('/loginAlumni', 'AlumniController::login');
+
 $routes->get('/login', 'AlumniController::loginBaru');
-// $routes->get('/register', 'AlumniController::register');
+
 $routes->get('/register', 'AlumniController::registerBaru');
 $routes->get('/user', 'AlumniController::user');
 
-=======
->>>>>>> 97b21353c9e6326a4c5d03a166985acb859fc0b6
+
 
 /*
  * --------------------------------------------------------------------
