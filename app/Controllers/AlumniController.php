@@ -41,23 +41,25 @@ class AlumniController extends BaseController
          return view('Alumni/tamplate/header');
         
     }
-    public function cariAlumni()
+    public function profil()
     {
-     $cari = new DataAlumni;
-     $data['cari'] = $cari->orderBy('nama', 'asc')->findAll();
-     echo view('Alumni/cari', $data);
+         return view('Alumni/profil');
         
     }
-    public function login()
+    public function berita()
     {
-     
-          return view('Alumni/login');
+         return view('Alumni/berita');
+        
     }
-    public function register()
+
+    public function cariAlumni()
     {
-     
-          return view('Alumni/register');
+//      $cari = new DataAlumni;
+//      $data['cari'] = $cari->orderBy('nama', 'asc')->findAll();
+//      echo view('Alumni/cari', $data);
+        
     }
+  
 
     protected $anggotaModel;
     public function __construct()

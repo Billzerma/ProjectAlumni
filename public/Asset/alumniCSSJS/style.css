@@ -277,7 +277,7 @@ section.home-banner {
 
   background-color: #efefef;
   margin: 20px 50px 0 50px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   padding: 20px;
 }
 
@@ -290,10 +290,25 @@ section.home-banner {
   font-weight: 500;
 }
 
+<<<<<<< HEAD
+=======
+
+
+.sampul {
+  width: 100px;
+}
+
+.table > tbody > tr > * {
+  vertical-align: middle;
+}
+
+
+>>>>>>> 97b21353c9e6326a4c5d03a166985acb859fc0b6
 /* berita */
 
 /* galeri */
 
+<<<<<<< HEAD
 .container-kegiatan {
   margin: 20px 90px 0 90px;
 }
@@ -351,6 +366,9 @@ section.home-banner {
 .text-galeri {
   margin: 0 0 20px 0;
 }
+=======
+
+>>>>>>> 97b21353c9e6326a4c5d03a166985acb859fc0b6
 
 .link-berita {
   text-decoration: none;
@@ -396,6 +414,7 @@ section.home-banner {
   border-radius: 15px;
 }
 
+<<<<<<< HEAD
 .sampul {
   width: 100px;
 }
@@ -403,3 +422,114 @@ section.home-banner {
 .table > tbody > tr > * {
   vertical-align: middle;
 }
+=======
+}
+
+.end-home{
+  margin: 0 90px 20px 90px;
+}
+
+.simple-expl{
+  
+  margin: 20px 90px 0 90px;
+ 
+}
+
+
+/* card geleri */
+
+.p-kegiatan{
+  
+  margin: 20px 90px 0 90px;
+  border-radius: 0;
+ 
+}
+
+
+.r-kegiatan{
+  border-radius: 0;
+
+}
+
+.galeri-padding{
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+/* end card geleri */
+
+
+
+
+/* profil */
+
+.wrap-profil{
+  margin: 20px 200px 20px 200px;
+ 
+  
+}
+.garis{
+  width: 500px;
+  height: 5px;
+  background-color: #ccc;
+}
+
+.img-profil{
+  height: 370px;
+  width: 250px;
+  object-fit: cover;
+  display: inline-block;
+  
+}
+.nama-pekerjaan{
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 40px;
+  
+  height: 300px;
+}
+.nama-pekerjaan p{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  
+}
+
+.nama-pekerjaan h1{
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.nama-pekerjaan h3{
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.pendidikan{
+  text-align: right;
+  margin-top: 40px;
+  height: 300px;
+}
+
+.medsos{
+  margin: 210px 20px 0 0;
+  text-align: right;
+  display: block;
+}
+.medsos li{
+  list-style-type: none;
+}
+.medsos a{
+  text-decoration: none;
+  margin: 15px 0 15px 0;
+  text-align: left;
+}
+
+
+
+/* end profil */
+
+/* berita */
+>>>>>>> 97b21353c9e6326a4c5d03a166985acb859fc0b6
