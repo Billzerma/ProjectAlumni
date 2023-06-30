@@ -13,6 +13,29 @@ class AlumniController extends BaseController
         
     }
 
+      // controller buat login
+      public function loginBaru()
+    {
+      $data = [
+            'config' => $this->config
+        ];
+         return view('auth/login', $data);
+        
+    }
+
+    public function registerBaru()
+    {
+         return view('auth/register');
+        
+    }
+
+    public function user()
+    {
+         return view('user/index');
+        
+    }
+
+
     public function dash()
     {
          return view('Alumni/tamplate/header');
@@ -40,6 +63,9 @@ class AlumniController extends BaseController
     public function __construct()
     {
       $this->anggotaModel = new AnggotaModel();
+      $this->session = service('session');
+    $this->config = config('Auth');
+    $this->auth = service('authentication');
     }
     public function anggota()
     {

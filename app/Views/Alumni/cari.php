@@ -24,17 +24,7 @@
                         <th>tanggal lulus</th>
                        
                     </tr>
-                    <?php
-                    foreach ($cari as $row) : ?>
-                        <tr>
-                            <td><?php echo $row->id; ?></td>
-                            <td><?php echo $row->nama; ?></td>
-                            <td><?php echo $row->alamat; ?></td>
-                            <td><?php echo $row->phone; ?></td>
-                            <td><?php echo $row->tahunlulus; ?></td>
-                            
-                        </tr>
-                    <?php endforeach; ?>
+                    
                 </table>
      
             </div>

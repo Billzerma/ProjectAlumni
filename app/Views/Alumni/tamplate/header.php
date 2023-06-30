@@ -44,7 +44,7 @@
                         <a class="nav-link active" href="<?= base_url('carialumni') ?>">cari alumni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active"  href="#contact">Log Out</a>
+                        <a class="nav-link active"  href="<?= base_url('logout') ?>">Log Out</a>
                     </li>
                 </ul>
             </div>

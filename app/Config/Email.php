@@ -6,8 +6,8 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-    public string $fromEmail  = 'akunlaptopk@gmail.com';
-    public string $fromName   = 'Judi online';
+    public string $fromEmail  = 'faidh36.id@gmail.com';
+    public string $fromName   = 'Web programming STIKI';
     public string $recipients = '';
 
     /**
@@ -58,7 +58,10 @@ class Email extends BaseConfig
     /**
      * SMTP Encryption. Either tls or ssl
      */
-    public string $SMTPCrypto = 'ssl';
+    // public string $SMTPCrypto = 'ssl';
+
+    public $SMTPVerifyPeer = false;
+    public $SMTPVerifyPeerName = false;
 
     /**
      * Enable word-wrap

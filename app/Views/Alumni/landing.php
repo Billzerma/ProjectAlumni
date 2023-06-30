@@ -52,12 +52,12 @@
     <div class="simple-expl">
                 <div class="row r-info">
                     <h2 class="subtitle-home">Aku Bingung Ini APAAA</h2>
-                    <div class="col-md-6 col-sm-4">
-                        <div class="img-info-web">
+                    <div class="col-lg-6 col-md-4">
+                        <div class="img-info-web ">
                             <img src="Asset\alumniCSSJS\gambar\galeri\info.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-4">
+                    <div class="col-md-6 col-md-4">
                         <div class="info-web">
 
                         </div>
@@ -65,10 +65,10 @@
                 </div>
             </div>
 
-    <div class="marsoseContainer">
+    <div class="marsoseContainer simple-expl">
         <div class="row  r-kegiatan justify-content-center">
             <h1 class="subtitle-home">Berita</h1>
-            <div class="col">
+            <div class="col-lg-3 col-lg-3">
                 <div class="marsoseCard" style="width: 16rem;">
                     <img src="Asset\alumniCSSJS\gambar\berita\berita1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-3 col-lg-3">
                 <div class="marsoseCard" style="width: 16rem;">
                     <img src="Asset\alumniCSSJS\gambar\berita\berita2.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-3 col-lg-3">
                 <div class="marsoseCard" style="width: 16rem;">
                     <img src="Asset\alumniCSSJS\gambar\berita\berita3.jpg" class="card-img-top" alt="Image 2">
                     <div class="card-body">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-3 col-lg-3">
                 <div class="marsoseCard" style="width: 16rem;">
                     <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
                     <div class="card-body">
@@ -116,7 +116,7 @@
         </div>
     </div>
 
-    <div class="container-kegiatan ">
+    <div class="container-kegiatan p-kegiatan ">
         <div class="row r-kegiatan">
         <h1 class="subtitle-home">Berita</h1>
             <div class="col-md-12 gal1">
@@ -142,66 +142,60 @@
                     
                     </div>
 
-
                 <!-- end galeri 1 -->
-               
-
+            
             </div>
-
-
-            <div class="col-md-4 gal2 ">
-
-            <div id="carouselExampleSlidesOnly" class="carousel slide slidergal1" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active colm-photo1">
-                    <img src="Asset\alumniCSSJS\gambar\galeri\galeri3.jpg" class="d-block w-100" alt="...">
+            
+            <div class="col-lg-3 col-lg-3 ">
+                <div class="marsoseCard galeri-padding" style="width: 16rem;">
+                    <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelan-pelan pak sopir</h5>
+                        <p class="home-berita">Lorem ipsum dolor sit amet,  illo corporis eius, dolor pariatur eos minima ea a eveniet totam!
+                             <a href="" class="link-berita">lihat Selengkapnya...</a></p>
                     </div>
-                    <div class="carousel-item colm-photo1 ">
-                    <img src="Asset\alumniCSSJS\gambar\galeri\galeri4.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                </div>
-                
-
-            </div>
-
-
-            <div class="col-md-4 gal3">
-
-            <div id="carouselExampleSlidesOnly" class="carousel slide slidergal1" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active colm-photo1">
-                    <img src="Asset\alumniCSSJS\gambar\galeri\galeri5.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item colm-photo1 ">
-                    <img src="Asset\alumniCSSJS\gambar\galeri\galeri6.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
                 </div>
             </div>
 
-
-            <div class="col-md-4 gal4">
-            <div id="carouselExampleSlidesOnly" class="carousel slide slidergal1" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active colm-photo1">
-                    <img src="Asset\alumniCSSJS\gambar\galeri\galeri7.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item colm-photo1 ">
-                    <img src="Asset\alumniCSSJS\gambar\galeri\galeri8.jpg" class="d-block w-100" alt="...">
+            <div class="col-lg-3 col-lg-3">
+                <div class="marsoseCard galeri-padding" style="width: 16rem;">
+                    <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelan-pelan pak sopir</h5>
+                        <p class="home-berita">Lorem ipsum dolor sit amet,illo corporis eius, dolor pariatur eos minima ea a eveniet totam!
+                             <a href="" class="link-berita">lihat Selengkapnya...</a></p>
                     </div>
                 </div>
-                </div>
-
             </div>
 
+            <div class="col-lg-3 col-lg-3">
+                <div class="marsoseCard galeri-padding" style="width: 16rem;">
+                    <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelan-pelan pak sopir</h5>
+                        <p class="home-berita">Lorem ipsum dolor sit amet illo corporis eius, dolor pariatur eos minima ea a eveniet totam!
+                             <a href="" class="link-berita">lihat Selengkapnya...</a></p>
+                    </div>
+                </div>
+            </div>
 
-
+            <div class="col-lg-3 col-lg-3">
+                <div class="marsoseCard galeri-padding" style="width: 16rem;">
+                    <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelan-pelan pak sopir</h5>
+                        <p class="home-berita">Lorem o corporis eius, dolor pariatur eos minima ea a eveniet totam!
+                             <a href="" class="link-berita">lihat Selengkapnya...</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-       
     </div>
 
-    <div class="end-home">
+
+
+
+    <!-- <div class="end-home">
                 <div class="row r-info-login">
                     <div class="col-md-12 col-sm-4">
                     <div class="info-web">
@@ -212,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 

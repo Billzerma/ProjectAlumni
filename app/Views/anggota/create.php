@@ -35,7 +35,7 @@
                     <?php endif; ?>
                 </div>
                 <div class="form-group">
-                    <label for="no_anggota">Nomor Anggota</label>
+                    <label for="no_anggota">Nomor Alumni</label>
                     <input type="text"
                         class="form-control <?php echo (isset($validation) && $validation->hasError('no_anggota')) ? 'is-invalid' : ''; ?>"
                         id="no_anggota" name="no_anggota" value="<?php echo old('no_anggota'); ?>">
