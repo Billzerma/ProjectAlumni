@@ -286,7 +286,7 @@ section.home-banner {
   
   background-color: #efefef;
   margin: 20px 50px 0 50px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   padding: 20px;
 
 }
@@ -302,82 +302,21 @@ section.home-banner {
 }
 
 
+
+.sampul {
+  width: 100px;
+}
+
+.table > tbody > tr > * {
+  vertical-align: middle;
+}
+
+
 /* berita */
 
 /* galeri */
 
-.container-kegiatan{
-  
-  margin: 20px 90px 0 90px;
- 
-}
-.simple-expl{
-  
-  margin: 20px 90px 0 90px;
- 
-}
-.r-kegiatan{
-  border-radius: 0;
 
-}
-.r-info{
-  margin: 0 50px 20px 50px;
-  border-radius: 20px 20px 0 0;
-}
-.r-info-login{
-  margin: 0 50px 20px 50px;
-  border-radius: 0 0 20px 20px;
-}
-
-.gal1{
- 
-  width: 600px;
-  height: 400px;
-  padding: 0;
-  
-}
-.end-home{
-  margin: 0 90px 20px 90px;
-}
-.gal2{
- 
-  height: 300px;
-  margin-top: 10px;
- 
-}
-.gal3{
-  margin-top: 10px;
-}
-
-
-.item-gal{
-  height: 400px;
-  width: 600px;
-}
-
-.colm-photo1{
-    
-  margin: 0;
-  padding: 0;
-  height: 300px;
-  object-fit: cover;
- 
-}
-
-
-.slidergal1{
-  margin-top: 20px;
-}
-
-
-.nopad{
-  padding: 0;
-}
-
-.text-galeri{
-  margin: 0 0 20px 0;
-
-}
 
 .link-berita{
   text-decoration: none;
@@ -426,3 +365,111 @@ section.home-banner {
   border-radius: 15px;
 
 }
+
+.end-home{
+  margin: 0 90px 20px 90px;
+}
+
+.simple-expl{
+  
+  margin: 20px 90px 0 90px;
+ 
+}
+
+
+/* card geleri */
+
+.p-kegiatan{
+  
+  margin: 20px 90px 0 90px;
+  border-radius: 0;
+ 
+}
+
+
+.r-kegiatan{
+  border-radius: 0;
+
+}
+
+.galeri-padding{
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+/* end card geleri */
+
+
+
+
+/* profil */
+
+.wrap-profil{
+  margin: 20px 200px 20px 200px;
+ 
+  
+}
+.garis{
+  width: 500px;
+  height: 5px;
+  background-color: #ccc;
+}
+
+.img-profil{
+  height: 370px;
+  width: 250px;
+  object-fit: cover;
+  display: inline-block;
+  
+}
+.nama-pekerjaan{
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 40px;
+  
+  height: 300px;
+}
+.nama-pekerjaan p{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  
+}
+
+.nama-pekerjaan h1{
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.nama-pekerjaan h3{
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.pendidikan{
+  text-align: right;
+  margin-top: 40px;
+  height: 300px;
+}
+
+.medsos{
+  margin: 210px 20px 0 0;
+  text-align: right;
+  display: block;
+}
+.medsos li{
+  list-style-type: none;
+}
+.medsos a{
+  text-decoration: none;
+  margin: 15px 0 15px 0;
+  text-align: left;
+}
+
+
+
+/* end profil */
+
+/* berita */

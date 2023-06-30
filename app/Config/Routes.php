@@ -43,10 +43,10 @@ $routes->get('/anggota/(:segment)', 'AlumniController::detail/$1');
 $routes->get('anggota/delete/(:num)', 'AlumniController::delete/$1');
 $routes->get('/anggota/edit/(:segment)', 'AlumniController::edit/$1');
 $routes->post('anggota/update/(:num)', 'AlumniController::update/$1');
+$routes->get('/profil', 'AlumniController::profil');
+$routes->get('/berita', 'AlumniController::berita');
 
 
-$routes->get('/loginAlumni', 'AlumniController::login');
-$routes->get('/register', 'AlumniController::register');
 
 /*
  * --------------------------------------------------------------------
