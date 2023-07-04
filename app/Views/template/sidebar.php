@@ -18,16 +18,34 @@
 
     <!-- Nav Item - My Profile -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?= base_url('profil'); ?>">
             <i class="fa-solid fa-user-graduate"></i>
             <span>My Profile</span></a>
     </li>
 
     <!-- Nav Item - Edit profile -->
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= base_url('anggota'); ?>">
             <i class="fa-solid fa-user-pen"></i>
-            <span>Edit Profile</span></a>
+            <span>Alumni</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+        <i class="fa-regular fa-share-from-square"></i>
+            <span>Posting Berita/Loker</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+        <i class="fa-regular fa-newspaper"></i>
+            <span>Berita</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+        <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Loker</span></a>
     </li>
 
     <!-- Divider -->

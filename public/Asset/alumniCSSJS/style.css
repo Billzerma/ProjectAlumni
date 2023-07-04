@@ -83,7 +83,7 @@ img {
 }
 
 .navbar {
-  background-color: #44629e;
+  background-color: #4e73df;
 }
 
 .navbar-nav .nav-link {
@@ -290,8 +290,6 @@ section.home-banner {
   font-weight: 500;
 }
 
-<<<<<<< HEAD
-=======
 
 
 .sampul {
@@ -303,12 +301,10 @@ section.home-banner {
 }
 
 
->>>>>>> 97b21353c9e6326a4c5d03a166985acb859fc0b6
 /* berita */
 
 /* galeri */
 
-<<<<<<< HEAD
 .container-kegiatan {
   margin: 20px 90px 0 90px;
 }
@@ -366,9 +362,7 @@ section.home-banner {
 .text-galeri {
   margin: 0 0 20px 0;
 }
-=======
 
->>>>>>> 97b21353c9e6326a4c5d03a166985acb859fc0b6
 
 .link-berita {
   text-decoration: none;
@@ -414,16 +408,7 @@ section.home-banner {
   border-radius: 15px;
 }
 
-<<<<<<< HEAD
-.sampul {
-  width: 100px;
-}
 
-.table > tbody > tr > * {
-  vertical-align: middle;
-}
-=======
-}
 
 .end-home{
   margin: 0 90px 20px 90px;
@@ -532,4 +517,3 @@ section.home-banner {
 /* end profil */
 
 /* berita */
->>>>>>> 97b21353c9e6326a4c5d03a166985acb859fc0b6

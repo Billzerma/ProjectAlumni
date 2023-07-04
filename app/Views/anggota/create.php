@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
+<?= $this->extend('template/index'); ?>
 
-<head>
-    <title>Form Tambah Data Anggota</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-
-<body>
-    <div class="container">
+<?= $this->section('page-content'); ?>
+ 
+ <div class="container">
         <h2>Form Tambah Data Anggota</h2>
 
         <?php echo form_open('anggota/save', ['enctype' => 'multipart/form-data']); ?>
@@ -74,27 +69,9 @@
         <?php echo form_close(); ?>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <!-- js for image preview -->
-    <script>
-    function previewImg() {
-        const sampul = document.querySelector('#sampul');
-        const sampulLabel = document.querySelector('.custom-file-label');
-        const imgPreview = document.querySelector('.img-preview');
 
-        sampulLabel.textContent = sampul.files[0].name;
+    
 
-        const fileSampul = new FileReader();
-        fileSampul.readAsDataURL(sampul.files[0]);
+<?= $this->endSection(); ?>
 
-        fileSampul.onload = function(e) {
-            imgPreview.src = e.target.result;
-        }
-    }
-    </script>
-</body>
-
-</html>

@@ -1,0 +1,315 @@
+/* profil */
+.wrap-profil{
+    margin: 20px 200px 10px 200px;
+    background-color:	#dfdfeb;
+    border-radius: 10px;
+    width: 840px;
+    height: 1100px;
+   
+    
+  }
+  .under-line{
+    width: 760px;
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: #796f6f;
+  }
+  
+  .img-profil{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 100%;
+    
+  }
+  .nama-pekerjaan{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 15px;
+    height: 120px;
+  }
+  .nama-pekerjaan p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding: 0;
+    color: #232020;
+    
+  }
+  
+  .nama-pekerjaan h1{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #232020;
+  }
+  .nama-pekerjaan h3{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #232020;
+  }
+  
+  .pendidikan{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 15px;
+    height: 150px;
+  }
+  .pendidikan h3{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #232020;
+  }
+
+  .pendidikan li{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #232020;
+  }
+  
+  .medsos{
+    margin: 15px 35px 0 0;
+    text-align: right;
+    
+  }
+  .medsos li{
+    list-style-type: none;
+  }
+
+  .medsos a{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 15px 0 15px 0;
+    text-align: left;
+    color: #232020;
+    
+  }
+
+  .medsos h3{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #232020;
+  }
+
+
+  .subtitle-home{
+    padding: 30px 10px 20px 40px;
+    margin: 0 0px 10px 10px;
+
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #232020;
+  }
+
+  .garis{
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 900px;
+    height: 5px;
+    background-color: #232020;
+  }
+
+  .summary{
+    text-align: justify;
+    margin-left: 40px;
+    margin-top: 15px;
+    width: 700px;
+    height: 220px;
+  }
+
+  .summary h3{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #232020;
+  }
+
+  .summary p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #232020;
+  }
+
+  
+  .portofolio{
+    text-align: justify;
+    margin-left: 40px;
+    margin-top: 15px;
+    width: 700px;
+    height: 250px;
+  }
+
+  .portofolio h3{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #232020;
+  }
+
+  /* end profil */
+
+
+
+  /* crud admin */
+  .sampul {
+    width: 100px;
+  }
+  
+  .table > tbody > tr > * {
+    vertical-align: middle;
+  }
+
+
+  /* edit */
+  .img-preview {
+    width: 150px;
+    height: auto;
+  }
+
+  .form-container {
+    margin-top: 20px;
+  }
+
+  .form-container .form-group {
+    margin-bottom: 10px;
+  }
+
+
+  /* end edit */
+
+  /* index admin */
+
+  .m-tab{
+    width: 1100px;
+  }
+  .title-table{
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #232020;
+  }
+
+  .title-th{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #232020;
+    
+  }
+
+  table > tbody > tr > td > a{
+    width: 90px;
+    margin-left: 10%;
+  }
+
+  
+
+
+
+
+  /* end index admin */
+
+  /* detail */
+  .container {
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #343a40;
+    text-decoration: underline;
+}
+
+  /* end detail */
+
+  /* create admin */
+
+  .wrap-in{
+   
+    border-radius: 10px;
+   
+  }
+
+  .bg{
+    background-color: #eae6e6;
+  }
+  .in-grup{
+    margin-top: 20px ;
+
+  }
+  .judul-create{
+    margin: 18px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #232020;
+  }
+  .btnReg{
+    margin-top: 30px;
+    margin-left: 13px;
+    margin-bottom: 20px;
+    align-items: end;
+  }
+
+  @media screen and(max-width:500px) {
+    .wrap-in{
+   
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+     
+    }
+    
+  }
+
+  
+
+
+
+  /* end Create admin */
+
+
+
+  /* end crud admin */

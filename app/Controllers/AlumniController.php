@@ -43,9 +43,9 @@ class AlumniController extends BaseController
     }
     public function cariAlumni()
     {
-     $cari = new DataAlumni;
-     $data['cari'] = $cari->orderBy('nama', 'asc')->findAll();
-     echo view('Alumni/cari', $data);
+//      $cari = new DataAlumni;
+//      $data['cari'] = $cari->orderBy('nama', 'asc')->findAll();
+//      echo view('Alumni/cari', $data);
         
     }
     public function login()
@@ -53,11 +53,24 @@ class AlumniController extends BaseController
      
           return view('Alumni/login');
     }
+    
     public function register()
     {
      
           return view('Alumni/register');
     }
+
+    public function myprofil()
+    {
+     
+          return view('user/index');
+    }
+
+
+
+
+
+
 
     protected $anggotaModel;
     public function __construct()
@@ -245,5 +258,25 @@ class AlumniController extends BaseController
 
       return redirect()->to('/anggota');
     }
+
+
+
+
+
+    public function createAkun()
+    {
+     
+          return view('crudAdmin\createAkun');
+    }
+
+
+
+
+
+ 
+
+
+
+
 
 }

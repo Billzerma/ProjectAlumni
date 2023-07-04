@@ -38,13 +38,19 @@
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#about">berita</a>
+                        <a class="nav-link active" href="#about">Berita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="<?= base_url('carialumni') ?>">cari alumni</a>
+                        <a class="nav-link active" href="#about">Loker</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active"  href="<?= base_url('logout') ?>">Log Out</a>
+                        <a class="nav-link active" href="<?= base_url('carialumni') ?>">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-primary"  href="<?= base_url('index') ?>">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-primary"  href="<?= base_url('logout') ?>">Log Out</a>
                     </li>
                 </ul>
             </div>

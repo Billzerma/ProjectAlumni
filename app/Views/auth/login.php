@@ -77,7 +77,7 @@
                                 <?php if ($config->activeResetter): ?>
                                 <p><a href="<?= url_to('forgot') ?>"><?=lang('Auth.forgotYourPassword')?></a></p>
                                 <?php endif; ?> <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                <a class="small" href="forgot-password.html">Forgot Password?</a>
                                 </div>
                             </div>
                         </div>

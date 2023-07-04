@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html>
+<?= $this->extend('template/index'); ?>
 
-<head>
-    <title>Edit Data Anggota</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-    .img-preview {
-        width: 150px;
-        height: auto;
-    }
+<?= $this->section('page-content'); ?>
 
-    .form-container {
-        margin-top: 20px;
-    }
 
-    .form-container .form-group {
-        margin-bottom: 10px;
-    }
-    </style>
-</head>
-
-<body>
     <div class="container">
         <h2>Edit Data Anggota</h2>
         <div class="row">
@@ -91,7 +73,7 @@
         </div>
     </div>
 
-    <!-- js for image preview -->
+    <!-- js for image preview
     <script>
     function previewImg() {
         const sampul = document.querySelector('#sampul');
@@ -107,11 +89,9 @@
             imgPreview.src = e.target.result;
         }
     }
-    </script>
+    </script> -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
+    <?= $this->endSection(); ?>
 
-</html>
+
+
