@@ -35,7 +35,7 @@ $routes->set404Override();
 $routes->get('/welcome', 'AlumniController::index');
 $routes->get('/', 'User::index');
 $routes->get('/index', 'User::index');
-$routes->get('/dashboard', 'AlumniController::index');
+$routes->get('/home', 'AlumniController::index');
 $routes->get('/carialumni', 'AlumniController::cariAlumni');
 $routes->get('/anggota', 'AlumniController::anggota');
 $routes->get('/anggota/create', 'AlumniController::create');
@@ -44,10 +44,21 @@ $routes->get('/anggota/(:segment)', 'AlumniController::detail/$1');
 $routes->get('anggota/delete/(:num)', 'AlumniController::delete/$1');
 $routes->get('/anggota/edit/(:segment)', 'AlumniController::edit/$1');
 $routes->post('anggota/update/(:num)', 'AlumniController::update/$1');
-$routes->get('/berita', 'AlumniController::berita');
 $routes->get('/profil', 'AlumniController::myprofil');
-
+$routes->get('/edit profile', 'AlumniController::editProfile');
 $routes->get('/buat akun', 'AlumniController::createAkun');
+$routes->get('/info akun', 'AlumniController::infoAkun');
+
+$routes->get('/berita', 'BeritaController::halamanBerita');
+$routes->get('/posting-berita', 'BeritaController::postingBerita');
+
+
+
+
+
+$routes->get('/lowongan-pekerjaan', 'LokerController::halamanLoker');
+$routes->get('/posting-loker', 'LokerController::postingLoker');
+
 
 
 

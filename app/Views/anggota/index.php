@@ -4,6 +4,7 @@
 <?= $this->section('page-content'); ?>
 
     <div class="container m-tab">
+   
         <div class="row">
             <div class="col">
                 <a href="/anggota/create" class="btn btn-primary mt-3">Tambah Akun <i class="fa-solid fa-user-plus"></i></a>

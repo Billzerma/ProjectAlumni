@@ -7,7 +7,7 @@
 <div class="conberita">
         <div class="landHome">
         <div class="container-berita">
-            <h3 class="subtitle-Berita mt-5">Berita Terkini <i class="fa-regular fa-newspaper"></i>
+            <h3 class="subtitle-Berita mt-5">Lowongan Pekerjaan <i class="fa-solid fa-briefcase"></i>
             
             </div>
         </div>
@@ -30,12 +30,16 @@
 
             <td class=".desk-gedung">
                 <div class="col-md-7 ps-1">
-                    
-                    
-                    <h5 class="card-text">Judul</h5>
+                    <h5 class="card-title">Judul</h5>
                     <p class="card-text">tanggal di posting oleh <span></span></p>
-                    <p class="card-text">isi</p>
-                    <a href="/pemesanan/">Lihat Selengkapnya</a>
+                    <p>Descripsi</p>
+                    <p>Persyaratan:</p>
+                
+                    <p>contact paerson
+                        k
+                    </p>
+                    <p>alamat</p>
+                   
                 </div>
             </td>
             </tr>

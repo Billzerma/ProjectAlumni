@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\AnggotaModel;
 use App\Models\DataAlumni;
 
+
 class AlumniController extends BaseController
 {
     public function index()
@@ -268,6 +269,29 @@ class AlumniController extends BaseController
      
           return view('crudAdmin\createAkun');
     }
+
+
+
+
+
+    public function infoAkun()
+    {
+     
+          return view('crudAdmin\index');
+    }
+
+  
+
+  
+
+
+
+    public function editProfile()
+    {
+     
+          return view('user\editProfile');
+    }
+
 
 
 

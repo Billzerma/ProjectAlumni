@@ -19,7 +19,7 @@
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="<?= base_url('profil'); ?>">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Edit Profile
                 </a>
@@ -34,3 +34,7 @@
     </ul>
 
 </nav>
+
+<!-- Tambahkan script berikut di bagian bawah halaman Anda -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

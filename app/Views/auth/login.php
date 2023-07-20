@@ -7,9 +7,11 @@
     <!-- Outer Row -->
     <div class="row justify-content-center">
 
+       
         <div class="col-md-6">
-
-            <div class="card o-hidden border-0 shadow-lg my-5">
+       
+            <h2 class="title-login">Alumni<span>Ku</span>.</h2>
+            <div class="card o-hidden border-0 shadow-lg my-3">
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
                     <div class="row">

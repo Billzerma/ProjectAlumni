@@ -35,16 +35,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active" aria-current="page" href="<?= base_url('home') ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#about">Berita</a>
+                        <a class="nav-link active" href="<?= base_url('berita') ?>">Berita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#about">Loker</a>
+                        <a class="nav-link active" href="<?= base_url('lowongan-pekerjaan') ?>">Loker</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="<?= base_url('carialumni') ?>">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="<?= base_url('profil') ?>">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active btn btn-primary"  href="<?= base_url('index') ?>">Log In</a>

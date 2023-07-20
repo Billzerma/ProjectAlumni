@@ -3,7 +3,9 @@
 <?= $this->section('content'); ?>
 
 <div class="container">
+<h2 class="title-regis">Alumni<span>Ku</span>.</h2>
     <div class="row justify-content-center">
+    
         <div class="col-md-6">
             <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body p-0">

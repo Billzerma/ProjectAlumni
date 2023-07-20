@@ -33,6 +33,57 @@ class CreateAuthTables extends Migration
 
         $this->forge->createTable('users', true);
 
+        // Profile Table
+        $this->forge->addField([
+            'id_profile'      => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
+            'nama'            => ['type' => 'varchar', 'constraint' => 50, 'null' => false],
+            'tahun_lulus'     => ['type' => 'varchar', 'constraint' => 20, 'null' => false],
+            'job'             => ['type' => 'varchar', 'constraint' => 50, 'null' => false],
+            'summary'         => ['type' => 'varchar', 'constraint' => 1500, 'null' => false],
+            'facebook'        => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            'instagram'       => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            'email'           => ['type' => 'varchar', 'constraint' => 30, 'null' => false],
+            'share_contact'   => ['type' => 'varchar', 'constraint' => 30, 'null' => false],
+            'sma'             => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            's1'              => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            's2'              => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            's3'              => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            'sampul_profile'  => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            'user_id'         => ['type' => 'int', 'constraint' => 11, 'unsigned' => true],
+        ]);
+
+        $this->forge->addKey('id_profile', true);
+        $this->forge->addForeignKey('user_id', 'users', 'id', '', 'CASCADE');
+        $this->forge->createTable('profile', true);
+
+        // Berita Table
+        $this->forge->addField([
+            'id_berita'       => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
+            'judul_berita'    => ['type' => 'varchar', 'constraint' => 50, 'null' => false],
+            'isi_berita'      => ['type' => 'varchar', 'constraint' => 2000, 'null' => false],
+            'sampul_berita'   => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            'profile_id'      => ['type' => 'int', 'constraint' => 11, 'unsigned' => true],
+        ]);
+
+        $this->forge->addKey('id_berita', true);
+        $this->forge->addForeignKey('profile_id', 'profile', 'id_profile', '', 'CASCADE');
+        $this->forge->createTable('berita', true);
+
+        // Loker Table
+        $this->forge->addField([
+            'id_loker'           => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
+            'judul_loker'        => ['type' => 'varchar', 'constraint' => 50, 'null' => false],
+            'deskripsi_loker'    => ['type' => 'varchar', 'constraint' => 100, 'null' => false],
+            'spesifikasi'        => ['type' => 'varchar', 'constraint' => 200, 'null' => false],
+            'contact_person'     => ['type' => 'varchar', 'constraint' => 50, 'null' => false],
+            'sampul_loker'       => ['type' => 'varchar', 'constraint' => 20, 'null' => true],
+            'profile_id'         => ['type' => 'int', 'constraint' => 11, 'unsigned' => true],
+        ]);
+
+        $this->forge->addKey('id_loker', true);
+        $this->forge->addForeignKey('profile_id', 'profile', 'id_profile', '', 'CASCADE');
+        $this->forge->createTable('loker', true);
+
         // Auth Login Attempts
         $this->forge->addField([
             'id'         => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
@@ -162,6 +213,9 @@ class CreateAuthTables extends Migration
         }
 
         $this->forge->dropTable('users', true);
+        $this->forge->dropTable('profile', true);
+        $this->forge->dropTable('berita', true);
+        $this->forge->dropTable('loker', true);
         $this->forge->dropTable('auth_logins', true);
         $this->forge->dropTable('auth_tokens', true);
         $this->forge->dropTable('auth_reset_attempts', true);

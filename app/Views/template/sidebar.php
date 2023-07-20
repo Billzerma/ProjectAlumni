@@ -25,25 +25,31 @@
 
     <!-- Nav Item - Edit profile -->
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('anggota'); ?>">
+        <a class="nav-link" href="<?= base_url('info akun'); ?>">
             <i class="fa-solid fa-user-pen"></i>
             <span>Alumni</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= base_url('posting-berita'); ?>">
         <i class="fa-regular fa-share-from-square"></i>
-            <span>Posting Berita/Loker</span></a>
+            <span>Posting Berita</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= base_url('posting-loker'); ?>">
+        <i class="fa-regular fa-share-from-square"></i>
+            <span>Posting Loker</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('berita') ?>">
         <i class="fa-regular fa-newspaper"></i>
             <span>Berita</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= base_url('lowongan-pekerjaan') ?>">
         <i class="fa-solid fa-magnifying-glass"></i>
             <span>Loker</span></a>
     </li>

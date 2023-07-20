@@ -23,6 +23,7 @@ class UserModel extends Model
     protected $useTimestamps   = true;
     protected $validationRules = [
         'email'         => 'required|valid_email|is_unique[users.email,id,{id}]',
+        //'email'         => 'required|valid_email',
         'username'      => 'required|alpha_numeric_punct|min_length[3]|max_length[30]|is_unique[users.username,id,{id}]',
         'password_hash' => 'required',
     ];

@@ -517,3 +517,36 @@ section.home-banner {
 /* end profil */
 
 /* berita */
+
+.mar-img{
+  text-align: center;
+vertical-align: middle;
+width: 500px;
+margin-top: 10px;
+
+}
+.table-posting{
+  margin-left: 200px;
+  width: 400px;
+}
+.wrapBerita{
+  width: 1200px;
+  margin-top: 30px;
+}
+
+
+.conberita{
+  margin-top: 100px;
+}
+
+.subtitle-Berita{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.container-berita{
+  margin-left: 90px;
+ 
+}
+
