@@ -23,34 +23,43 @@
             <span>My Profile</span></a>
     </li>
 
-    <!-- Nav Item - Edit profile -->
+    <!-- Nav Item - Alumni -->
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('info akun'); ?>">
+        <a class="nav-link" href="<?= base_url('/alumni'); ?>">
             <i class="fa-solid fa-user-pen"></i>
             <span>Alumni</span></a>
     </li>
 
+    <!-- Nav Item - Tambah Alumni -->
+    <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('/tambahAlumni'); ?>">
+            <i class="fa-solid fa-user-pen"></i>
+            <span>Tambah Alumni</span></a>
+    </li>
+
+    <?php if(in_groups('admin')) : ?>
     <li class="nav-item">
         <a class="nav-link" href="<?= base_url('posting-berita'); ?>">
-        <i class="fa-regular fa-share-from-square"></i>
+            <i class="fa-regular fa-share-from-square"></i>
             <span>Posting Berita</span></a>
     </li>
+    <?php endif ?>
 
     <li class="nav-item">
         <a class="nav-link" href="<?= base_url('posting-loker'); ?>">
-        <i class="fa-regular fa-share-from-square"></i>
+            <i class="fa-regular fa-share-from-square"></i>
             <span>Posting Loker</span></a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="<?= base_url('berita') ?>">
-        <i class="fa-regular fa-newspaper"></i>
+            <i class="fa-regular fa-newspaper"></i>
             <span>Berita</span></a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="<?= base_url('lowongan-pekerjaan') ?>">
-        <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
             <span>Loker</span></a>
     </li>
 

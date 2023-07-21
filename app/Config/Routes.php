@@ -45,9 +45,15 @@ $routes->get('anggota/delete/(:num)', 'AlumniController::delete/$1');
 $routes->get('/anggota/edit/(:segment)', 'AlumniController::edit/$1');
 $routes->post('anggota/update/(:num)', 'AlumniController::update/$1');
 $routes->get('/profil', 'AlumniController::myprofil');
-$routes->get('/edit profile', 'AlumniController::editProfile');
+$routes->get('/editprofile', 'AlumniController::editProfile');
 $routes->get('/buat akun', 'AlumniController::createAkun');
 $routes->get('/info akun', 'AlumniController::infoAkun');
+$routes->get('/tambahAlumni', 'AlumniController::tambahAlumni');
+$routes->post('/alumniSave', 'AlumniController::saveAlumni');
+$routes->get('/alumni', 'AlumniController::daftarAlumni');
+
+// buat hapus alumnni
+$routes->get('/hapusAlumni/(:segment)', 'AlumniController::deleteAlumni/$1');
 
 $routes->get('/berita', 'BeritaController::halamanBerita');
 $routes->get('/posting-berita', 'BeritaController::postingBerita');
