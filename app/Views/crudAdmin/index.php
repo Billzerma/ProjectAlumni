@@ -66,22 +66,28 @@
                     <thead class="table-dark ">
                         <tr>
                             <th scope="col title-th">No.</th>
-                            <th scope="col title-th">Foto</th>
+                            <th scope="col title-th">sampul</th>
                             <th scope="col title-th">Nama</th>
+                            <th scope="col title-th">Tahun Lulus</th>
+                            <th scope="col title-th">Email</th>
                             <th scope="col title-th">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                     
+                    <?php $i = 1;  ?>
+                    <?php foreach ($profile as $p):?>
                         <tr>
-                            <th scope="row"></th>
-                            <td><img src="/Asset/alumniCSSJS/gambar/Anggota/" alt="" class="sampul">
-                            </td>
-                            <td></td>
+                            <th scope="row"><?= $i++; ?></th>
+                            <td><img src="Asset\alumniCSSJS\gambar\berita\<?= $p['sampul_profile'];?>" alt="" class="sampul"></td>
+                            <td><?= $p['nama'];?></td>
+                            <td><?= $p['tahun_lulus'];?></td>
+                            <td><?= $p['email'];?></td>
+                            
                             <td>
                                 <a href="" class="btn btn-success">Detail</a>
                             </td>
                         </tr>
+                        <?php endforeach;?>
                         
                     </tbody>
                 </table>

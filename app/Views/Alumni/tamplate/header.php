@@ -47,7 +47,7 @@
                         <a class="nav-link active" href="<?= base_url('carialumni') ?>">Alumni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="<?= base_url('profil') ?>">Dashboard</a>
+                        <a class="nav-link active" href="<?= base_url('info akun') ?>">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active btn btn-primary"  href="<?= base_url('index') ?>">Log In</a>

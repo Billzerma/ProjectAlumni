@@ -17,13 +17,15 @@
     </div>
 
     <!-- Nav Item - My Profile -->
-    <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('profil'); ?>">
-            <i class="fa-solid fa-user-graduate"></i>
-            <span>My Profile</span></a>
-    </li>
+  
 
     <!-- Nav Item - Edit profile -->
+    <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('home'); ?>">
+            <i class="fa-solid fa-user-pen"></i>
+            <span>Home</span></a>
+    </li>
+
     <li class="nav-item">
         <a class="nav-link" href="<?= base_url('info akun'); ?>">
             <i class="fa-solid fa-user-pen"></i>

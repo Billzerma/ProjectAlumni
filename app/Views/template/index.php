@@ -147,7 +147,7 @@
     function previewImg() {
         const sampul = document.querySelector('#sampul');
         const sampulLabel = document.querySelector('.custom-file-label');
-        const imgPreview = document.querySelector('.img-preview');
+        const imgPreview = document.querySelector('.sampul-berita');
 
         sampulLabel.textContent = sampul.files[0].name;
 

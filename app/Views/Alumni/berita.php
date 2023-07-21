@@ -19,30 +19,28 @@
         
         <tbody>
         
+            <?php foreach ($berita as $b):?>
             <tr>
             
             <td class="mar-img">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     
-                        <img src="\Asset\alumniCSSJS\gambar\carousel\img2.jpg" class="img-fluid rounded-start img-gedung" alt="...">
+                        <img src="Asset\alumniCSSJS\gambar\berita\<?= $b['sampul_berita'];?>" class="img-fluid rounded-start img-gedung" alt="...">
                 </div>
             </td>
 
             <td class=".desk-gedung">
-                <div class="col-md-7 ps-1">
+                <div class="col-md-12 ps-1">
                     
                     
-                    <h5 class="card-text">Judul</h5>
+                    <h5 class="card-text"><?= $b['judul_berita'];?></h5>
                     <p class="card-text">tanggal di posting oleh <span></span></p>
-                    <p class="card-text">isi</p>
-                    <a href="/pemesanan/">Lihat Selengkapnya</a>
+                    <p class="card-text"><?= $b['headline'];?></p>
+                    <a href="/detail-berita/<?= $b['id_berita'];?>">Lihat Selengkapnya</a>
                 </div>
             </td>
             </tr>
-            <tr>
-            
-            
-        </tr>
+           <?php endforeach;?>
             
         </tbody>
         </table>

@@ -1,0 +1,10 @@
+__ci_last_regenerate|i:1689898056;_ci_previous_url|s:36:"http://localhost:8080/posting-berita";err|s:314:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>The headline field must be at least 10 characters in length.</li>
+					<li>Gambarnya terlalu besar bosque</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:3:"err";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:12:"judul_berita";s:3:"ddd";s:8:"headline";s:5:"aaaaa";s:10:"isi_berita";s:16:"aaaaaaaaaaaaaaaa";}}_ci_validation_errors|a:2:{s:8:"headline";s:60:"The headline field must be at least 10 characters in length.";s:14:"sampul_profile";s:30:"Gambarnya terlalu besar bosque";}

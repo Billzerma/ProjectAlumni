@@ -50,7 +50,10 @@ $routes->get('/buat akun', 'AlumniController::createAkun');
 $routes->get('/info akun', 'AlumniController::infoAkun');
 
 $routes->get('/berita', 'BeritaController::halamanBerita');
+$routes->get('/detail-berita/(:num)', 'BeritaController::detailBerita/$1');
 $routes->get('/posting-berita', 'BeritaController::postingBerita');
+$routes->post('/posting-berita/save', 'BeritaController::save');
+$routes->post('/posting-loker/save', 'LokerController::save');
 
 
 

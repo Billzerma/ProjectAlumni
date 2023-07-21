@@ -18,35 +18,32 @@
         <table class="table table-posting mt-5 shadow">
         
         <tbody>
-        
-            <tr>
+        <?php foreach ($loker as $l):?>
+            <tr class="mar-t" >
             
             <td class="mar-img">
-                <div class="col-md-10">
-                    
-                        <img src="\Asset\alumniCSSJS\gambar\carousel\img2.jpg" class="img-fluid rounded-start img-gedung" alt="...">
+                <div class="col-md-12">
+                        <img src="Asset\alumniCSSJS\gambar\galeri\<?= $l['sampul_loker'];?>" class="img-fluid rounded-start img-gedung" alt="...">
                 </div>
             </td>
 
             <td class=".desk-gedung">
-                <div class="col-md-7 ps-1">
-                    <h5 class="card-title">Judul</h5>
+                <div class="col-md-12 ps-1">
+                    <h5 class="card-title"><?= $l['judul_loker'];?></h5>
                     <p class="card-text">tanggal di posting oleh <span></span></p>
-                    <p>Descripsi</p>
-                    <p>Persyaratan:</p>
+                    <p class="card-text"><?= $l['deskripsi_loker'];?></p>
+                    <p class="card-text ful">Persyaratan: <br> <?= $l['spesifikasi'];?></p>
                 
-                    <p>contact paerson
-                        k
+                    <p>Contact Person:
+                    <?= $l['contact_person'];?>
                     </p>
-                    <p>alamat</p>
+                    <p>Alamat: <?= $l['alamat'];?></p>
                    
                 </div>
             </td>
             </tr>
-            <tr>
-            
-            
-        </tr>
+            <?php endforeach;?>
+         
             
         </tbody>
         </table>

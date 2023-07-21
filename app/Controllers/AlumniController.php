@@ -3,11 +3,27 @@
 namespace App\Controllers;
 
 use App\Models\AnggotaModel;
+use App\Models\AlumniModel;
+use App\Models\UserModel;
 use App\Models\DataAlumni;
 
 
 class AlumniController extends BaseController
 {
+
+      protected $anggotaModel;
+      protected $alumniModel;
+  
+      public function __construct()
+      {
+        $this->anggotaModel = new AnggotaModel();
+        $this->alumniModel = new AlumniModel();
+       
+        $this->session = service('session');
+      $this->config = config('Auth');
+      $this->auth = service('authentication');
+      }
+
     public function index()
     {
          return view('Alumni/landing');
@@ -61,26 +77,15 @@ class AlumniController extends BaseController
           return view('Alumni/register');
     }
 
-    public function myprofil()
-    {
-     
-          return view('user/index');
-    }
+  
 
 
 
 
 
 
+   
 
-    protected $anggotaModel;
-    public function __construct()
-    {
-      $this->anggotaModel = new AnggotaModel();
-      $this->session = service('session');
-    $this->config = config('Auth');
-    $this->auth = service('authentication');
-    }
     public function anggota()
     {
       // $anggota = $this->anggotaModel->findAll();
@@ -276,8 +281,13 @@ class AlumniController extends BaseController
 
     public function infoAkun()
     {
+      $profile = $this-> alumniModel -> findAll();
+
+      $data=[
+           'profile'=>$profile
+      ];
      
-          return view('crudAdmin\index');
+          return view('crudAdmin\index',$data);
     }
 
   

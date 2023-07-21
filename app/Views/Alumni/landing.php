@@ -118,7 +118,7 @@
 
     <div class="container-kegiatan p-kegiatan ">
         <div class="row r-kegiatan">
-        <h1 class="subtitle-home">Berita</h1>
+        
             <div class="col-md-12 gal1">
 
                 <!-- galeri1 -->
@@ -130,7 +130,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="Asset\alumniCSSJS\gambar\galeri\galeri2.jpg" class="d-block w-100" alt="...">
+                        <img src="Asset\alumniCSSJS\gambar\berita\berita1.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="mt-5 fs-3 text-uppercase">Galeri Kegiatan Alumni</h5>
                             <p class="display-1 fw-bolder text-capitalize">Alumniku</p>
@@ -145,50 +145,41 @@
                 <!-- end galeri 1 -->
             
             </div>
+
+            <div class="col-6">
+                <div class="navb-bawah">
+                <img src="Asset/alumniCSSJS/gambar/galeri/alumniku.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="navb-bawah">
+                <h2 class="mar-nav-b">Mulai Perjalanan Anda
+                     Bersama Alumni<span>Ku.</span></h2>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-b">
+                        <a class="" aria-current="page" href="<?= base_url('home') ?>">Home</a>
+                    </li>
+                    <li class="nav-b">
+                        <a class="" href="<?= base_url('berita') ?>">Berita</a>
+                    </li>
+                    <li class="nav-b">
+                        <a class="" href="<?= base_url('lowongan-pekerjaan') ?>">Loker</a>
+                    </li>
+                    <li class="nav-b">
+                        <a class="" href="<?= base_url('carialumni') ?>">Alumni</a>
+                    </li>
+                    <li class="nav-b">
+                        <a class="" href="<?= base_url('profil') ?>">Dashboard</a>
+                    </li>
+                    
+                </ul>
+                
+                </div>
+            </div>
             
-            <div class="col-lg-3 col-lg-3 ">
-                <div class="marsoseCard galeri-padding" style="width: 16rem;">
-                    <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Pelan-pelan pak sopir</h5>
-                        <p class="home-berita">Lorem ipsum dolor sit amet,  illo corporis eius, dolor pariatur eos minima ea a eveniet totam!
-                             <a href="" class="link-berita">lihat Selengkapnya...</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-lg-3">
-                <div class="marsoseCard galeri-padding" style="width: 16rem;">
-                    <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Pelan-pelan pak sopir</h5>
-                        <p class="home-berita">Lorem ipsum dolor sit amet,illo corporis eius, dolor pariatur eos minima ea a eveniet totam!
-                             <a href="" class="link-berita">lihat Selengkapnya...</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-lg-3">
-                <div class="marsoseCard galeri-padding" style="width: 16rem;">
-                    <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Pelan-pelan pak sopir</h5>
-                        <p class="home-berita">Lorem ipsum dolor sit amet illo corporis eius, dolor pariatur eos minima ea a eveniet totam!
-                             <a href="" class="link-berita">lihat Selengkapnya...</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-lg-3">
-                <div class="marsoseCard galeri-padding" style="width: 16rem;">
-                    <img src="Asset\alumniCSSJS\gambar\berita\berita4.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Pelan-pelan pak sopir</h5>
-                        <p class="home-berita">Lorem o corporis eius, dolor pariatur eos minima ea a eveniet totam!
-                             <a href="" class="link-berita">lihat Selengkapnya...</a></p>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 

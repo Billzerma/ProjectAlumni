@@ -1,0 +1,10 @@
+__ci_last_regenerate|i:1689881078;_ci_previous_url|s:36:"http://localhost:8080/posting-berita";redirect_url|s:27:"http://localhost:8080/index";err|s:282:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>judul_berita nama gedung mohon diisi</li>
+					<li>isi_berita mohon diisi</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:3:"err";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:4:{s:5:"judul";s:23:"ddddddddddddddddddddddd";s:8:"headline";s:34:"dddddddddddddddddddddddddddddddddd";s:6:"berita";s:30:"dddddddddddddddddddddddddddddd";s:6:"sampul";s:0:"";}}_ci_validation_errors|a:2:{s:12:"judul_berita";s:36:"judul_berita nama gedung mohon diisi";s:10:"isi_berita";s:22:"isi_berita mohon diisi";}
