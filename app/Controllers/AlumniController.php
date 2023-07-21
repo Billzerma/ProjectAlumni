@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\AlumniModel;
 use App\Models\AnggotaModel;
 use App\Models\AlumniModel;
 use App\Models\UserModel;
@@ -86,6 +87,19 @@ class AlumniController extends BaseController
 
    
 
+<<<<<<< HEAD
+=======
+    protected $anggotaModel;
+    protected $alumniModel;
+    public function __construct()
+    {
+      $this->anggotaModel = new AnggotaModel();
+      $this->alumniModel = new AlumniModel();
+      $this->session = service('session');
+    $this->config = config('Auth');
+    $this->auth = service('authentication');
+    }
+>>>>>>> b7f74eb5f49f53f5eac79217929de76fdc5dfc41
     public function anggota()
     {
       // $anggota = $this->anggotaModel->findAll();
@@ -302,7 +316,113 @@ class AlumniController extends BaseController
           return view('user\editProfile');
     }
 
+//   untuk menampilkan data alumni
+    public function daftarAlumni()
+    {
+        // Create an instance of the AlumniModel
+        $alumniModel = new AlumniModel();
 
+        // Get the search keyword from the URL query parameter
+        $keyword = $this->request->getGet('keyword');
+
+        // Fetch alumni data based on the search keyword (if provided)
+        if ($keyword) {
+            // Use the `like` method to search for 'tahun_lulus' field containing the keyword
+            $profile = $alumniModel->like('tahun_lulus', $keyword)->findAll();
+        } else {
+            // If no search keyword provided, fetch all alumni data
+            $profile = $alumniModel->findAll();
+        }
+
+        $data = [
+            'profile' => $profile,
+        ];
+
+        // Assuming the view file 'crudAdmin/index.php' is located in the 'views' folder
+        return view('crudAdmin/index', $data);
+    }
+
+//     untuk tambah data alumni
+    public function tambahAlumni()
+    {
+     
+          return view('user\tambahAlumni');
+    }
+
+    public function saveAlumni()
+    {
+      // validasi input
+      if(!$this->validate([
+            'nama'=>'required|is_unique[anggota.nama]',
+            'tahun_lulus'=>'required',
+            'email'=>'required',
+            'sampul_profile'=> [
+                  'rules' => 'max_size[sampul_profile,1024]|is_image[sampul_profile]|mime_in[sampul_profile,image/jpg,image/jpeg,image/png]',
+                  'errors' => [
+                        'max_size' => 'Gambarnya terlalu besar bosque',
+                        'is_image' => 'filenya harus gambar ya cakep',
+                        'mime_in' => 'lo ga pilih gambar bre...'
+                  ]
+            ]
+      ])) {
+            $validation = \Config\Services::validation();
+            session()->setFlashdata('err',$validation->listErrors());
+            return redirect()->to('/tambahAlumni')->withInput();
+      }
+
+      // ambil gambar
+      $fileSampul = $this->request->getFile('sampul_profile');
+      // apakah tidak ada gambar yang diupload
+      if($fileSampul->getError() == 4) {
+            $namaSampul = 'default.png';
+      } else {
+            // pindahkan file ke folder gambar di ci
+            $fileSampul->move('Asset/alumniCSSJS/gambar/Anggota');
+            // ambil nama file
+      $namaSampul = $fileSampul->getName();
+      }
+     
+
+      
+      $slug = url_title($this->request->getVar('nama'), '-', true);
+      $this->alumniModel->save([
+            'nama' => $this->request->getVar('nama'),
+            'slug' => $slug,
+            'tahun_lulus' => $this->request->getVar('tahun_lulus'),
+            'email' => $this->request->getVar('email'),
+            'sampul_profile' => $namaSampul
+      ]);
+
+      session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan.');
+
+      return redirect()->to('/tambahAlumni');
+    }
+
+//     untuk hapus data alumni
+    public function deleteAlumni($id_profile)
+    {
+        // Find alumni by ID
+        $alumni = $this->alumniModel->where('id_profile', $id_profile)->first();
+    
+        // Check if alumni exists
+        if (!$alumni) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Anggota dengan ID ' . $id_profile . ' tidak ditemukan.');
+        }
+    
+        // Get the file path of the image
+      //   $pathToImage = FCPATH . 'Asset/alumniCSSJS/gambar/Anggota/' . $alumni['sampul_profile'];
+    
+        // Check if the image is not the default image and exists
+      //   if ($alumni['sampul_profile'] != 'default.png' && file_exists($pathToImage)) {
+            // unlink($pathToImage); // Delete the image file
+      //   }
+    
+        // Delete alumni data by ID
+        $this->alumniModel->where('id_profile', $id_profile)->delete();
+    
+        session()->setFlashdata('pesan', 'Data berhasil dihapus');
+        return redirect()->to('/alumni');
+    }
 
 
 

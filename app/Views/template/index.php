@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-        
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -48,6 +48,10 @@
 
     .fa-graduation-cap {
         animation: bounce 2s infinite;
+    }
+
+    .sampul_profile {
+        width: 50px;
     }
     </style>
 
@@ -140,12 +144,12 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
-    
+
 
     <!-- js for image preview -->
     <script>
     function previewImg() {
-        const sampul = document.querySelector('#sampul');
+        const sampul = document.querySelector('#sampul_profile');
         const sampulLabel = document.querySelector('.custom-file-label');
         const imgPreview = document.querySelector('.sampul-berita');
 
@@ -161,7 +165,7 @@
     </script>
 
 
-    
+
 
 </body>
 
