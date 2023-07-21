@@ -75,15 +75,7 @@ class BeritaController extends BaseController
                     'min_length[10]'=>'{field} minimal 10 karakter'
                     
                ]
-               ],
-               'sampul_profile'=> [
-                    'rules' => 'max_size[sampul_profile,1024]|is_image[sampul_profile]|mime_in[sampul_profile,image/jpg,image/jpeg,image/png]',
-                    'errors' => [
-                          'max_size' => 'Gambarnya terlalu besar bosque',
-                          'is_image' => 'filenya harus gambar ya cakep',
-                          'mime_in' => 'lo ga pilih gambar bre...'
-                    ]
-              ]
+               ]
   
 
       ];
@@ -98,7 +90,7 @@ class BeritaController extends BaseController
           'judul_berita' => $this->request->getVar('judul_berita'),
         'isi_berita' => $this->request->getVar('isi_berita'),
         'headline'=>$this->request->getVar('headline'),
-        'sampul_profile' => $namaSampul
+       
 
      ]);
 
