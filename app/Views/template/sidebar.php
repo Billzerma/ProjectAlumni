@@ -21,27 +21,22 @@
 
     <!-- Nav Item - Alumni -->
     <li class="nav-item">
-<<<<<<< HEAD
         <a class="nav-link" href="<?= base_url('home'); ?>">
             <i class="fa-solid fa-user-pen"></i>
             <span>Home</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('info akun'); ?>">
-=======
+       
+
         <a class="nav-link" href="<?= base_url('/alumni'); ?>">
->>>>>>> b7f74eb5f49f53f5eac79217929de76fdc5dfc41
+
             <i class="fa-solid fa-user-pen"></i>
             <span>Alumni</span></a>
     </li>
 
     <!-- Nav Item - Tambah Alumni -->
-    <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('/tambahAlumni'); ?>">
-            <i class="fa-solid fa-user-pen"></i>
-            <span>Tambah Alumni</span></a>
-    </li>
+   
 
     <?php if(in_groups('admin')) : ?>
     <li class="nav-item">

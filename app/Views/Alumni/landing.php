@@ -18,18 +18,12 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active c-item">
-                <img src="Asset\alumniCSSJS\gambar\galeri\galeri4.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
+                <img src="\Asset\alumniCSSJS\gambar\berita\berita2.jpg" class="d-block w-100" alt="...">
+                
                 </div>
                 <div class="carousel-item c-item">
-                <img src="Asset\alumniCSSJS\gambar\galeri\galeri2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
+                <img src="\Asset\alumniCSSJS\gambar\berita\berita3.jpg" class="d-block w-100" alt="...">
+                
                 </div>
                
             </div>
@@ -51,15 +45,17 @@
 
     <div class="simple-expl">
                 <div class="row r-info">
-                    <h2 class="subtitle-home">Aku Bingung Ini APAAA</h2>
+                    <h2 class="subtitle-home">Apa Itu AlumniKu?</h2>
                     <div class="col-lg-6 col-md-4">
                         <div class="img-info-web ">
                             <img src="Asset\alumniCSSJS\gambar\galeri\info.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 col-md-4">
+                    <div class="col-md-5 col-md-4">
                         <div class="info-web">
-
+                            <p class="card-text">
+Alumniku adalah sebuah website yang dirancang khusus untuk mendata dan menghubungkan para alumni dari suatu lembaga pendidikan,
+ organisasi, atau perusahaan. Tujuan utamanya adalah untuk menciptakan jaringan komunikasi yang kuat di antara para alumni, memfasilitasi berbagi informasi, pengalaman, dan peluang karier.</p>
                         </div>
                     </div>
                 </div>

@@ -33,7 +33,7 @@ $routes->set404Override();
 //$routes->get('/', 'Home::index');
 
 $routes->get('/welcome', 'AlumniController::index');
-$routes->get('/', 'User::index');
+$routes->get('/', 'AlumniController::daftarAlumni');
 $routes->get('/index', 'User::index');
 $routes->get('/home', 'AlumniController::index');
 $routes->get('/carialumni', 'AlumniController::cariAlumni');

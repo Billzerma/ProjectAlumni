@@ -47,14 +47,18 @@
                         <a class="nav-link active" href="<?= base_url('carialumni') ?>">Alumni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="<?= base_url('info akun') ?>">Dashboard</a>
+                        <a class="nav-link active" href="<?= base_url('alumni') ?>">Dashboard</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active btn btn-primary"  href="<?= base_url('index') ?>">Log In</a>
-                    </li>
-                    <li class="nav-item">
+                    <?php if(logged_in()):?>
+                        <li class="nav-item">
                         <a class="nav-link active btn btn-primary"  href="<?= base_url('logout') ?>">Log Out</a>
                     </li>
+                    <?php else :?>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-primary"  href="<?= base_url('alumni') ?>">Log In</a>
+                    </li>
+                    <?php endif;?>
                 </ul>
             </div>
         </div>

@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\AlumniModel;
 use App\Models\AnggotaModel;
-use App\Models\AlumniModel;
 use App\Models\UserModel;
 use App\Models\DataAlumni;
 
@@ -47,11 +46,7 @@ class AlumniController extends BaseController
         
     }
 
-    public function user()
-    {
-         return view('user/index');
-        
-    }
+   
 
 
     public function dash()
@@ -87,19 +82,7 @@ class AlumniController extends BaseController
 
    
 
-<<<<<<< HEAD
-=======
-    protected $anggotaModel;
-    protected $alumniModel;
-    public function __construct()
-    {
-      $this->anggotaModel = new AnggotaModel();
-      $this->alumniModel = new AlumniModel();
-      $this->session = service('session');
-    $this->config = config('Auth');
-    $this->auth = service('authentication');
-    }
->>>>>>> b7f74eb5f49f53f5eac79217929de76fdc5dfc41
+
     public function anggota()
     {
       // $anggota = $this->anggotaModel->findAll();
