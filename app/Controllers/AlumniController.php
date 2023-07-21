@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\AlumniModel;
 use App\Models\AnggotaModel;
 use App\Models\DataAlumni;
 
@@ -74,9 +75,11 @@ class AlumniController extends BaseController
 
 
     protected $anggotaModel;
+    protected $alumniModel;
     public function __construct()
     {
       $this->anggotaModel = new AnggotaModel();
+      $this->alumniModel = new AlumniModel();
       $this->session = service('session');
     $this->config = config('Auth');
     $this->auth = service('authentication');
