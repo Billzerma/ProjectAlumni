@@ -1,0 +1,247 @@
+.bg{
+    background-color: #1A84FF;
+}
+
+.container-fluid{
+    height:100vh;
+    background-color: #1A84FF;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.login{
+   border: solid;
+   background-color: #1A84FF;
+   margin-left: 670px;
+   margin-top: 40px;
+   display: block;
+   width: 120px;
+   height: 60px;
+   text-align: center;
+   padding: 10px;
+   font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+.selogan h1{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.selogan{
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.selogan h2{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.selogan .harga{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.selogan .harga span{
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.callbutton{
+    display: block;
+    width: 370px;
+    height: 70px;
+    background-color: #FCC22E;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.jumbotron{
+    height: 490px;
+    width: 700px;
+    margin-top: 70px;
+    
+    
+}
+.jombotron-section{
+   
+}
+
+.container-2{
+    background-color: #FFFFFF;
+}
+
+.title-paket{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.paket-com1{
+    background-color: #FFFFFF;
+    margin-left: 300px;
+    width: 500px;
+    height: 900px;
+    margin-bottom: 30px;
+    border: 4px solid #1A84FF;
+}
+.paket-com2{
+    background-color: #FFFFFF;
+    margin-right: 100px;
+    width: 500px;
+    height: 900px;
+    margin-bottom: 30px;
+    border: 4px solid #1A84FF;
+}
+
+.title-per-paket{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.title-reguler{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.sub-title-reguler{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.harga-paket-com{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+}
+
+.harga-paket{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.btn{
+    display: block;
+    margin-top: 30px;
+    background-color: #1A84FF;
+    width: 300px;
+    height: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.gear{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+} 
+.list-com1{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+
+.list-com1 li{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.spek-camera{
+    margin-left: 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.list-spek-camera{
+    list-style-type: none;
+    margin-left: 60px;
+}
+
+.list-spek-camera li{
+   
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width:600px){
+
+    .selogan h1{
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+    .selogan{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .selogan h2{
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    .selogan .harga{
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+    
+    .selogan .harga span{
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .jumbotron{
+        height: 290px;
+        width: 410px;
+        margin-top: 70px;
+        margin-left: 20px;
+        
+    }
+
+}
+

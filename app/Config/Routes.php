@@ -32,19 +32,9 @@ $routes->set404Override();
 // $routes->get('/', 'Home::Index');
 //$routes->get('/', 'Home::index');
 
-$routes->get('/welcome', 'AlumniController::index');
-$routes->get('/', 'AlumniController::index');
-$routes->get('/dashboard', 'AlumniController::index');
-$routes->get('/carialumni', 'AlumniController::cariAlumni');
-$routes->get('/anggota', 'AlumniController::anggota');
-$routes->get('/anggota/create', 'AlumniController::create');
-$routes->post('anggota/save', 'AlumniController::save');
-$routes->get('/anggota/(:segment)', 'AlumniController::detail/$1');
-$routes->get('anggota/delete/(:num)', 'AlumniController::delete/$1');
-$routes->get('/anggota/edit/(:segment)', 'AlumniController::edit/$1');
-$routes->post('anggota/update/(:num)', 'AlumniController::update/$1');
-$routes->get('/profil', 'AlumniController::profil');
-$routes->get('/berita', 'AlumniController::berita');
+//$routes->get('/welcome', 'User::index');
+$routes->get('/', 'Landing::landing');
+
 
 
 
