@@ -24,9 +24,9 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'login'      => LoginFilter::class,
-        'role'       => RoleFilter::class,
-        'permission' => PermissionFilter::class,
+        'login'         => \Myth\Auth\Filters\LoginFilter::class,
+        'role'          => \Myth\Auth\Filters\RoleFilter::class,
+        'permission'    => \Myth\Auth\Filters\PermissionFilter::class,
     ];
 
     /**
@@ -39,6 +39,7 @@ class Filters extends BaseConfig
             //'login'
             // 'csrf',
             // 'invalidchars',
+            //'login'
         ],
         'after' => [
             'toolbar',
@@ -68,6 +69,10 @@ class Filters extends BaseConfig
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
     public array $filters = [
+<<<<<<< HEAD
         //'login' => ['before' => ['carialumni']]
+=======
+        'login' => ['before' => ['alumni']]
+>>>>>>> 8b451217bdc89db30f37b1e77265bd271f55705d
     ];
 }

@@ -1,0 +1,11 @@
+__ci_last_regenerate|i:1689880750;_ci_previous_url|s:35:"http://localhost:8080/posting-loker";redirect_url|s:27:"http://localhost:8080/index";err|s:321:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>judul_loker inputkan hanya huruf</li>
+					<li>deskripsi_loker mohon diisi</li>
+					<li>spesifikasi mohon diisi</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:3:"err";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:6:{s:11:"judul_loker";s:16:"Customer Service";s:15:"deskripsi_loker";s:0:"";s:11:"spesifikasi";s:0:"";s:14:"contact_person";s:6:"223323";s:6:"alamat";s:3:"qww";s:12:"sampul_loker";s:0:"";}}_ci_validation_errors|a:3:{s:11:"judul_loker";s:32:"judul_loker inputkan hanya huruf";s:15:"deskripsi_loker";s:27:"deskripsi_loker mohon diisi";s:11:"spesifikasi";s:23:"spesifikasi mohon diisi";}

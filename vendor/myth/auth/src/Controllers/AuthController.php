@@ -123,7 +123,7 @@ class AuthController extends Controller
     {
         // check if already logged in.
         if ($this->auth->check()) {
-            return redirect()->back();
+            return redirect()->back();        
         }
 
         // Check if registration is allowed
@@ -150,6 +150,7 @@ class AuthController extends Controller
         $rules = config('Validation')->registrationRules ?? [
             'username' => 'required|alpha_numeric_space|min_length[3]|max_length[30]|is_unique[users.username]',
             'email'    => 'required|valid_email|is_unique[users.email]',
+            //'email'    => 'required|valid_email',
         ];
 
         if (! $this->validate($rules)) {
@@ -194,7 +195,8 @@ class AuthController extends Controller
         }
 
         // Success!
-        return redirect()->route('login')->with('message', lang('Auth.registerSuccess'));
+        //return redirect()->route('login')->with('message', lang('Auth.registerSuccess'));
+        return redirect()->route('info akun');
     }
 
     //--------------------------------------------------------------------
